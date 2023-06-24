@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="container my-4">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="#"><h2>To-Do List</h2></a>
+              </div>
+            </nav>
+        </div>
+        <div class="container my-3">
+            <form action="" id="my-form">
+                <div class="">
+                    <!-- <span class="input-group-text" id="inputGroup-sizing-default"></span> -->
+                    
+                    <input class="todocls mx-3" id="todo" type="text" placeholder="Enter Todo" >
+                    <input class="todocls mx-3" id="desc" type="textarea" placeholder="Description" >
+                    <input class="btn btn-primary mx-3" type="submit" value="Submit">
+
+                  
+                  
+                    <!-- <span class="input-group-text">With textarea</span> -->
+                    <!-- <textarea class="form" aria-label="With textarea"></textarea> -->
+                  </div>
+            </form>
+            <hr>
+            <div class="container my-3">
+                <nav class="navbar navbar-expand-lg ">
+                  <div class="container-fluid">
+                    <a class="navbar-brand" href="#">To-Do Remaining</a>
+                  </div>
+                </nav>
+                <ul id="remItem">
+
+                </ul>
+            </div>
+            <hr>
+            <div class="container my-3">
+                <nav class="navbar  ">
+                  <div class="container-fluid">
+                    <a class="navbar-brand" href="#">To-Do Done</a>
+                  </div>
+                </nav>
+                <ul id="doneItem">
+
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
